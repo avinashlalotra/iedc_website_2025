@@ -9,7 +9,7 @@ const PastEventCard = ({ title, description, imageUrl, imagePlaceholder }: PastE
   return (
     <div className="flex flex-col overflow-hidden">
       <h4 className="font-serif text-2xl font-bold mb-4">{title}</h4>
-      <p className="mb-6 leading-relaxed text-base">{description}</p>
+      <p className="mb-6 leading-relaxed text-base w-full">{description}</p>
       <div className="overflow-hidden">
         <img 
           src={imageUrl} 
