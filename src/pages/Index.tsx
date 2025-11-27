@@ -18,9 +18,16 @@ const Index = () => {
             <p className="text-lg lg:text-xl text-muted-foreground mb-8">
               Welcome to the Innovation and Entrepreneurship Development Cell (IEDC) at CUSAT, where ideas transform into reality. We are a student-run organization dedicated to fostering a culture of innovation and entrepreneurship.
             </p>
-            <button className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 rounded-full text-lg font-semibold">
-              Join Us
-            </button>
+            <button
+  onClick={() =>
+    (window.location.href =
+      "https://docs.google.com/forms/d/e/1FAIpQLSdpsHol25yZfmTVBYVXx5i-FAPgkKVXmcdhDAWgDHKfcQAoMw/viewform?usp=header")
+  }
+  className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 rounded-full text-lg font-semibold"
+>
+  Join Us
+</button>
+
           </div>
           <div className="w-full max-w-md lg:w-1/3 lg:max-w-none mt-8 lg:mt-0">
             <LatestUpdates />

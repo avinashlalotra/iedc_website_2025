@@ -14,9 +14,9 @@ this is literally your chance. 💯
 
 Wanna know what the program's all about? 👀`,
     linkText: "Check it out here",
-    linkUrl: "#",
-    registerText: "Register here",
-    registerUrl: "#",
+    linkUrl: "https://sturdy-tarn-d7e.notion.site/The-Founder-Next-door-275cb1b52b69809c9b8df2ea8f55f6d9",
+    registerText: "",
+    registerUrl: "",
     footer: "Come as you are; leave as a founder.",
     imageUrl: "/founder-next-door-2.jpeg",
   },
