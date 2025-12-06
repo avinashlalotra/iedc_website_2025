@@ -24,23 +24,48 @@ const EventCard = ({
       <div className="flex-1 p-8">
         <h3 className="font-serif text-3xl mb-6">{title}</h3>
         <p className="mb-6 leading-relaxed text-lg w-full">{description}</p>
-        {linkText && linkUrl && (
-          <p className="mb-4 text-lg">
-            <a href={linkUrl} className="text-blue-600 underline hover:text-blue-800">
-              {linkText}
-            </a>
-          </p>
-        )}
-        {registerText && registerUrl && (
-          <>
-            <p className="mb-4 text-lg">Already SOLD? Register now:</p>
-            <p className="mb-6">
-              <a href={registerUrl} className="text-blue-600 underline hover:text-blue-800">
-                {registerText}
-              </a>
-            </p>
-          </>
-        )}
+{linkText && linkUrl && (
+  <div className="mb-4">
+    <a
+      href={linkUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="
+        inline-block
+        bg-black text-white
+        px-6 py-2 rounded-full
+        text-lg font-semibold
+        transition-all duration-300
+        hover:scale-105 hover:bg-gray-800
+      "
+    >
+      {linkText}
+    </a>
+  </div>
+)}
+
+       {registerText && registerUrl && (
+  <>
+    <p className="mb-3 text-lg">Already SOLD? Register now:</p>
+    <a
+      href={registerUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="
+        inline-block
+        bg-primary text-primary-foreground
+        px-6 py-2 rounded-full
+        text-lg font-semibold
+        transition-all duration-300
+        hover:scale-105 hover:shadow-lg
+        active:scale-95
+      "
+    >
+      {registerText}
+    </a>
+  </>
+)}
+
         {footer && <p className="font-medium text-lg">{footer}</p>}
       </div>
       {imageUrl && (
