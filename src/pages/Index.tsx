@@ -18,9 +18,25 @@ const Index = () => {
             <p className="text-lg lg:text-xl text-muted-foreground mb-8">
               Welcome to the Innovation and Entrepreneurship Development Cell (IEDC) at CUSAT, where ideas transform into reality. We are a student-run organization dedicated to fostering a culture of innovation and entrepreneurship.
             </p>
-            <button className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 rounded-full text-lg font-semibold">
-              Join Us
-            </button>
+
+              <button
+                className="relative overflow-hidden bg-black text-white px-8 py-3 rounded-full text-lg font-semibold group transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                aria-label="Join Us"
+              >
+                <span className="relative z-10">Join Us</span>
+                {/* SHINE EFFECT: shadcn style, more visible */}
+                <span
+                  className="absolute inset-0 pointer-events-none"
+                  aria-hidden="true"
+                >
+                  <span
+                    className="block absolute left-[-40%] top-0 h-full w-[80%] bg-gradient-to-r from-white/0 via-white/80 to-white/0 opacity-0 group-hover:opacity-100 group-hover:left-[110%] transition-all duration-700 ease-out"
+                    style={{ filter: 'blur(1px)' }}
+                  />
+                </span>
+              </button>
+
+
           </div>
           <div className="w-full max-w-md lg:w-1/3 lg:max-w-none mt-8 lg:mt-0">
             <LatestUpdates />
