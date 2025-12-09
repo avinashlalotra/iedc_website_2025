@@ -23,12 +23,7 @@ const Index = () => {
     (window.location.href =
       "https://docs.google.com/forms/d/e/1FAIpQLSdpsHol25yZfmTVBYVXx5i-FAPgkKVXmcdhDAWgDHKfcQAoMw/viewform?usp=header")
   }
-  className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 rounded-full text-lg font-semibold"
->
-  Join Us
-</button>
-
-              <button
+  
                 className="relative overflow-hidden bg-black text-white px-8 py-3 rounded-full text-lg font-semibold group transition-all duration-300 hover:scale-105 hover:shadow-lg"
                 aria-label="Join Us"
               >
