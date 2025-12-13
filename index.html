@@ -27,27 +27,32 @@
   <meta name="twitter:title" content="IEDC CUSAT - Innovation and Entrepreneurship Development Cell" />
   <meta name="twitter:description" content="IEDC CUSAT fosters innovation and entrepreneurship at Cochin University. Join our startup programs, workshops, and events." />
   <meta name="twitter:image" content="https://iedccusat.vercel.app/og-image.png" />
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "IEDC CUSAT",
-    "url": "https://iedccusat.vercel.app",
-    "logo": "https://iedccusat.vercel.app/IEDC Logo.svg",
-    "description": "Innovation and Entrepreneurship Development Cell at Cochin University of Science and Technology",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Kochi",
-      "addressRegion": "Kerala",
-      "addressCountry": "IN"
-    },
-    "sameAs": [
-      "https://github.com/IEDC-CUSAT",
-      "https://www.instagram.com/iedc.cusat/",
-      "https://www.linkedin.com/company/iedc-cusat"
-    ]
-  }
-  </script>
 </head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+  
+  <!-- Structured Data - Put it AFTER React loads -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "IEDC CUSAT",
+  "url": "https://iedccusat.vercel.app",
+  "logo": "https://iedccusat.vercel.app/IEDC Logo.svg",
+  "description": "Innovation and Entrepreneurship Development Cell at Cochin University of Science and Technology",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kochi",
+    "addressRegion": "Kerala",
+    "addressCountry": "IN"
+  },
+  "sameAs": [
+    "https://github.com/IEDC-CUSAT",
+    "https://www.instagram.com/iedc.cusat/",
+    "https://www.linkedin.com/company/iedc-cusat"
+  ]
+}
+  </script>
+</body>
